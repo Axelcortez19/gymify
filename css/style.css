@@ -1,0 +1,442 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 1.5rem 0rem;
+}
+nav ul li {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+nav ul li a {
+  text-decoration: dashed;
+  color: lightcoral;
+  padding: 0.5rem 3.12rem;
+  transition: all 0.5s ease;
+  border-radius: 0.3rem;
+}
+nav ul li a:hover {
+  background-color: lightcoral;
+  color: white;
+  box-shadow: 0.5rem 0.5rem rgb(255, 255, 255);
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  height: 52.5rem;
+  justify-content: center;
+  align-items: center;
+  color: lightcoral;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 40%;
+}
+
+.headings {
+  font-size: 3rem;
+  text-align: center;
+  margin: 5rem 0;
+}
+
+.knop {
+  padding: 0.9rem 5rem;
+  background-color: transparent;
+  border: 0.1rem solid lightcoral;
+  color: lightcoral;
+  outline: none;
+  transition: ease;
+}
+
+.knop:hover {
+  cursor: pointer;
+  background-color: lightcoral;
+  color: white;
+  box-shadow: 0 0 1rem white, 0 0 1rem white, 0 0 1rem white;
+  font-weight: bold;
+}
+
+.About {
+  padding: 5rem 9%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8rem;
+  background-color: #242121;
+}
+
+.content {
+  flex: 1 1 42rem;
+}
+
+span {
+  font-size: 3rem;
+  color: lightcoral;
+}
+
+.title {
+  font-size: 4rem;
+  margin-top: 0.5rem;
+}
+
+.About p {
+  font-size: 1.5rem;
+  color: white;
+  padding: 1rem 0;
+  line-height: 2;
+}
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.box-container p{
+  font-size: 1.5rem;
+  color: white;
+  padding: 1rem 0;
+  line-height: 2;
+}
+
+.box {
+  flex: 1 1 20rem;
+}
+
+i {
+  padding-right: 1.5rem;
+  color: lightcoral;
+}
+
+h3 {
+  color: lightcoral;
+  padding-top: 1rem;
+}
+.image {
+  flex: 1 50 42rem;
+  position: relative;
+}
+
+.About img {
+  width: 100%;  
+  padding: 0;
+}
+
+Footer {
+  background-color: black;
+  padding: 5rem 5rem 5rem;
+}
+
+.links {
+  font-size: 1.5rem;
+  display: block;
+  color: white;
+  padding: 1rem 0;
+  margin-top: 0.5rem;
+}
+
+/*membership css*/
+.gastenimg {
+  margin: 0;
+  background-image: url("../images/2gasten.jpg");
+  min-height: 380px;
+  background-position: 5rem 62rem;
+  background-size: cover;
+}
+
+.container {
+  width: 100%;
+  min-width: 100vh;
+  background-color:#242121;
+  padding: 0 0 20rem;
+}
+
+.container h2 {
+  color: lightcoral;
+  font-size: 3rem;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.prijs {
+  width: 90%;
+  max-width: 70rem;
+  height: 20rem;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-gap: 5rem;
+}
+
+.col {
+  background: #f08080;
+  padding: 10% 15%;
+  color: white;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.col p {
+  font-size: 3rem;
+}
+
+.col h4 {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.col ul {
+  text-align: center;
+  margin: 2rem 0;
+  list-style: none;
+}
+
+.col ul li {
+  margin: 1rem 0;
+}
+
+.knop2 {
+  padding: 0.9rem 5rem;
+  background-color: transparent;
+  border: 0.1rem solid white;
+  border-radius: 1rem;
+  color: white;
+  outline: none;
+  transition: ease;
+}
+
+.knop2:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 1rem white, 0 0 1rem white, 0 0 1rem white;
+  font-weight: bold;
+}
+
+/* join pagina css */
+.container2 {
+  width: 100%;
+  min-width: 100vh;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.col1 {
+  flex-basis: 50%;
+  flex-grow: 1;
+  background-color:#242121;
+    background-size: cover;
+    background-position: center;
+    min-height: inherit;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+}
+.col2{
+  flex-basis: 50%;
+  flex-grow: 1;
+  padding: 0rem 5rem;
+}
+
+.logo{
+  width: 50rem;
+}
+
+.col1{
+  list-style: none;
+}
+
+.col1 ul li{
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+.col2 h2{
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .button1{
+    width: 25rem;
+    color: #333;
+    font-weight: 500;
+    font-size: 1rem;
+    
+  }
+
+  label{
+    border-radius: 1rem;
+    display: block;
+    padding: 0.4rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 5px 1px rgb(0, 0, 0, 0.5);
+   align-items: center;
+   font-size: 1rem;
+   font-weight: 500;
+    display: flex;
+    color: #242121;
+    cursor: pointer;
+  }
+  label span{
+    flex: 1;
+    margin-left: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: lightcoral;
+  }
+
+  
+
+  label span small{
+    font-size: 1rem;
+  }
+
+  input[type="radio"]:checked + span{
+    color: #202025;
+  }
+
+  input[type="text"],input[type="email"]{
+    width: 100%;
+    background: transparent;
+    padding: 1rem 1rem;
+    outline: none;
+    border: 0.1rem solid #333;
+    border-radius: 1rem;
+    margin: 1rem 0;
+  }
+
+  form button{
+    background: #f08080;
+    font-size: 1rem;
+    padding: 1rem 3rem;
+    margin: 1rem 0;
+    border: 0;
+    outline: none;
+    border-radius: 1rem;
+    cursor: pointer;
+  }
+  form button:hover{
+    cursor: pointer;
+    background-color:#242121;
+    color: white;
+    box-shadow: 0 0 1rem white, 0 0 1rem white, 0 0 1rem white;
+    font-weight: bold;
+  }
+
+  /* Clubs css */
+
+.clubs{
+  width: auto;
+  margin: auto;
+  text-align: center;
+ padding: 4rem;
+  background-color: #242121;
+}   
+
+.clubs h1{
+  color: #f08080;
+  font-size: 3rem;
+}
+
+.clubs h3{
+  color: white;
+}
+
+.row{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+	justify-content: space-between;
+  column-gap: 3rem;
+  row-gap: 2rem;
+	padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.clubscolumn{
+  flex-basis: 32%;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.clubscolumn img{
+  width: 100%;
+  height: 100%;
+}
+.eerstelayer{
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position:absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.eerstelayer:hover{
+  background:rgba(240, 128, 128, 0.5);
+}
+
+
+
+
+
+
