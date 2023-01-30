@@ -10,14 +10,17 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-body {
+body,html {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
-html {
-  scroll-behavior: smooth;
-  height: 100%;
+ol,
+ul,
+li {
+  text-decoration: none;
+  list-style: none;
 }
 
 nav {
@@ -71,18 +74,10 @@ nav ul li a:hover {
 .home {
   display: flex;
   flex-direction: column;
-  height: 52.5rem;
+  height: 90vh;
   justify-content: center;
   align-items: center;
   color: lightcoral;
-}
-
-.main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: absolute;
-  top: 40%;
 }
 
 .headings {
@@ -98,6 +93,7 @@ nav ul li a:hover {
   color: lightcoral;
   outline: none;
   transition: ease;
+  border-radius: 1rem;
 }
 
 .knop:hover {
@@ -145,7 +141,7 @@ span {
   margin-top: 1rem;
 }
 
-.box-container p{
+.box-container p {
   font-size: 1.5rem;
   color: white;
   padding: 1rem 0;
@@ -171,7 +167,7 @@ h3 {
 }
 
 .About img {
-  width: 100%;  
+  width: 100%;
   padding: 0;
 }
 
@@ -200,7 +196,7 @@ Footer {
 .container {
   width: 100%;
   min-width: 100vh;
-  background-color:#242121;
+  background-color: #242121;
   padding: 0 0 20rem;
 }
 
@@ -217,7 +213,7 @@ Footer {
   height: 20rem;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-template-columns: repeat(3, auto);
   grid-gap: 5rem;
 }
 
@@ -277,140 +273,138 @@ Footer {
 .col1 {
   flex-basis: 50%;
   flex-grow: 1;
-  background-color:#242121;
-    background-size: cover;
-    background-position: center;
-    min-height: inherit;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: #fff;
+  background-color: #242121;
+  background-size: cover;
+  background-position: center;
+  min-height: inherit;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
 }
-.col2{
+.col2 {
   flex-basis: 50%;
   flex-grow: 1;
   padding: 0rem 5rem;
 }
 
-.logo{
+.logo {
   width: 50rem;
 }
 
-.col1{
+.col1 {
   list-style: none;
 }
 
-.col1 ul li{
+.col1 ul li {
   display: flex;
   align-items: center;
   margin: 1rem 0;
 }
-.col2 h2{
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
-  }
+.col2 h2 {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
 
-  .button1{
-    width: 25rem;
-    color: #333;
-    font-weight: 500;
-    font-size: 1rem;
-    
-  }
+.button1 {
+  width: 25rem;
+  color: #333;
+  font-weight: 500;
+  font-size: 1rem;
+}
 
-  label{
-    border-radius: 1rem;
-    display: block;
-    padding: 0.4rem;
-    margin-bottom: 1rem;
-    box-shadow: 0 0 5px 1px rgb(0, 0, 0, 0.5);
-   align-items: center;
-   font-size: 1rem;
-   font-weight: 500;
-    display: flex;
-    color: #242121;
-    cursor: pointer;
-  }
-  label span{
-    flex: 1;
-    margin-left: 1rem;
-    font-size: 2rem;
-    font-weight: 600;
-    color: lightcoral;
-  }
+label {
+  border-radius: 1rem;
+  display: block;
+  padding: 0.4rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 5px 1px rgb(0, 0, 0, 0.5);
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  color: #242121;
+  cursor: pointer;
+}
+label span {
+  flex: 1;
+  margin-left: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: lightcoral;
+}
 
-  
+label span small {
+  font-size: 1rem;
+}
 
-  label span small{
-    font-size: 1rem;
-  }
+input[type="radio"]:checked + span {
+  color: #202025;
+}
 
-  input[type="radio"]:checked + span{
-    color: #202025;
-  }
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  background: transparent;
+  padding: 1rem 1rem;
+  outline: none;
+  border: 0.1rem solid #333;
+  border-radius: 1rem;
+  margin: 1rem 0;
+}
 
-  input[type="text"],input[type="email"]{
-    width: 100%;
-    background: transparent;
-    padding: 1rem 1rem;
-    outline: none;
-    border: 0.1rem solid #333;
-    border-radius: 1rem;
-    margin: 1rem 0;
-  }
+form button {
+  background: #f08080;
+  font-size: 1rem;
+  padding: 1rem 3rem;
+  margin: 1rem 0;
+  border: 0;
+  outline: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+form button:hover {
+  cursor: pointer;
+  background-color: #242121;
+  color: white;
+  box-shadow: 0 0 1rem white, 0 0 1rem white, 0 0 1rem white;
+  font-weight: bold;
+}
 
-  form button{
-    background: #f08080;
-    font-size: 1rem;
-    padding: 1rem 3rem;
-    margin: 1rem 0;
-    border: 0;
-    outline: none;
-    border-radius: 1rem;
-    cursor: pointer;
-  }
-  form button:hover{
-    cursor: pointer;
-    background-color:#242121;
-    color: white;
-    box-shadow: 0 0 1rem white, 0 0 1rem white, 0 0 1rem white;
-    font-weight: bold;
-  }
+/* Clubs css */
 
-  /* Clubs css */
-
-.clubs{
+.clubs {
   width: auto;
   margin: auto;
   text-align: center;
- padding: 4rem;
+  padding: 4rem;
   background-color: #242121;
-}   
+}
 
-.clubs h1{
+.clubs h1 {
   color: #f08080;
   font-size: 3rem;
 }
 
-.clubs h3{
+.clubs h3 {
   color: white;
 }
 
-.row{
+.row {
   display: grid;
   grid-template-columns: repeat(3, auto);
-	justify-content: space-between;
+  justify-content: space-between;
   column-gap: 3rem;
   row-gap: 2rem;
-	padding-top: 2rem;
+  padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
-.clubscolumn{
+.clubscolumn {
   flex-basis: 32%;
   border-radius: 1rem;
   margin-bottom: 1rem;
@@ -418,25 +412,29 @@ Footer {
   overflow: hidden;
 }
 
-.clubscolumn img{
+.clubscolumn img {
   width: 100%;
   height: 100%;
 }
-.eerstelayer{
+.eerstelayer {
   background: transparent;
   height: 100%;
   width: 100%;
-  position:absolute;
+  position: absolute;
   top: 0;
   left: 0;
   transition: 0.5s;
 }
-.eerstelayer:hover{
-  background:rgba(240, 128, 128, 0.5);
+.eerstelayer:hover {
+  background: rgba(240, 128, 128, 0.5);
 }
 
 
-
-
-
-
+@media screen and (max-width: 992px) {
+  .row {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: space-between;
+    row-gap: 2rem;
+  }
+}
